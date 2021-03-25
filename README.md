@@ -2,7 +2,7 @@
 
 https://github.com/classgraph/classgraph
 
-[![classgraph.png](classgraph.png)]
+![classgraph.svg](classgraph.svg)
 
 ## Create dot file
 
