@@ -1,0 +1,25 @@
+digraph {
+size="500.0,500.0";
+layout=dot;
+rankdir="BT";
+overlap=false;
+splines=true;
+pack=true;
+graph [fontname = "Courier, Regular"]
+node [fontname = "Courier, Regular"]
+edge [fontname = "Courier, Regular"]
+"com.lsc.domain.Cat"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td><font point-size='12'>public class</font></td></tr><tr><td><font point-size='14'><b>com.lsc.domain</b></font></td></tr><tr><td><font point-size='20'><b>Cat</b></font></td></tr></table>>];
+"com.lsc.util.Util"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td><font point-size='12'>public class</font></td></tr><tr><td><font point-size='14'><b>com.lsc.util</b></font></td></tr><tr><td><font point-size='20'><b>Util</b></font></td></tr></table>>];
+"com.lsc.domain.Animal"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td><font point-size='12'>public class</font></td></tr><tr><td><font point-size='14'><b>com.lsc.domain</b></font></td></tr><tr><td><font point-size='20'><b>Animal</b></font></td></tr></table>>];
+"com.lsc.App"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td><font point-size='12'>public class</font></td></tr><tr><td><font point-size='14'><b>com.lsc</b></font></td></tr><tr><td><font point-size='20'><b>App</b></font></td></tr></table>>];
+"com.lsc.domain.Person"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td><font point-size='12'>public class</font></td></tr><tr><td><font point-size='14'><b>com.lsc.domain</b></font></td></tr><tr><td><font point-size='20'><b>Person</b></font></td></tr></table>>];
+"com.lsc.domain.Dog"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td><font point-size='12'>public class</font></td></tr><tr><td><font point-size='14'><b>com.lsc.domain</b></font></td></tr><tr><td><font point-size='20'><b>Dog</b></font></td></tr></table>>];
+
+  "com.lsc.App" -> "com.lsc.domain.Cat" [arrowsize=2.5]
+  "com.lsc.App" -> "com.lsc.domain.Dog" [arrowsize=2.5]
+  "com.lsc.App" -> "com.lsc.domain.Person" [arrowsize=2.5]
+  "com.lsc.domain.Animal" -> "com.lsc.util.Util" [arrowsize=2.5]
+  "com.lsc.domain.Cat" -> "com.lsc.util.Util" [arrowsize=2.5]
+  "com.lsc.domain.Dog" -> "com.lsc.domain.Animal" [arrowsize=2.5]
+  "com.lsc.domain.Person" -> "com.lsc.domain.Dog" [arrowsize=2.5]
+}

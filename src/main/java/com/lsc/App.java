@@ -40,6 +40,12 @@ public class App
                 // then dot -Tsvg < classgraph.dot > classgraph.svg
                 String generateGraphVizDotFile = allClasses.generateGraphVizDotFile(500, 500);
                 Files.write(Paths.get("classgraph.dot"), generateGraphVizDotFile.getBytes());
+
+                // https://github.com/classgraph/classgraph/issues/508#issuecomment-808002268
+                String generateGraphVizDotFileFromInterClassDependencies = allClasses
+                        .generateGraphVizDotFileFromInterClassDependencies(500, 500, false);
+                Files.write(Paths.get("classgraph-inter-class-dependencies.dot"),
+                        generateGraphVizDotFileFromInterClassDependencies.getBytes());
             } catch (IOException e) {
                 e.printStackTrace();
             }
